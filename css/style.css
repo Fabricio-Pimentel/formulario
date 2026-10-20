@@ -4,29 +4,64 @@
     box-sizing: border-box;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 420px;
+body {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+header, footer {
+    background-color: blue;
+    margin: 12px;
+    padding: 20px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 12px;
+    text-align: left;
+    padding: 20px;
+    max-width: 50%;
+    margin-left: 300px;
+}
 
 input, select, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #94a3b8;
-  border-radius: 8px;
-}
-
-input:focus, select:focus, textarea:focus {
-  outline: 2px solid #2563eb;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 button {
-  background-color: #2563eb;
-  color: white;
-  border: 0;
-  border-radius: 8px;
-  padding: 12px;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+.opcao{
+    display: flex;
+    justify-content: start;
+}
+
+.dado {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+}
+
+.pergunta {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+label {
+    color: rgb(0, 0, 165);
 }

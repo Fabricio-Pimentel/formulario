@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8">
         <title>Formulários</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>Cadastro de Heróis</h1>
-        <form action="#" method="get">
-            <!--Os campos ficam aqui dentro-->
-            <label for="busca">Buscar</label>
-            <input id="busca" name="busca" type="text"/>
-            <button type="submit">Buscar</button>
+        <header>
+            <h1>Academia de Heróis</h1>
+            <p>Inscreva-se para participar da próxima missão.</p>
+        </header>
+        <main>
+            <form action="#" method="get">
+                <h2>Faça sua inscrição</h2>
+                    <label for="nome">Nome do herói:</label>
+                    <input id="nome" name="nome" type="text"/>
+                    
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email"/>
+                    
+                    <label for="idade">Idade</label>
+                    <input id="idade" name="idade" type="number"/>
+                    
+                    <label for="equipe">Escolha sua equipe:</label>
+                    <select name="equipe" id="equipe">
+                        <option>Liga da Justiça</option>
+                        <option>Jovens Titãs</option>
+                        <option>Vingadores</option>
+                        <option>Quarteto Fantástico</option>
+                    </select>
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email"/>
-
-            <label for="idade">Idade</label>
-            <input id="idade" name="idade" type="number"/>
-
-            <label for="nascimento">Nascimento</label>
-            <input id="nascimento" name="nascimento" type="date"/>
-
-            <p>Qual periodo você prefere dormir?</p>
-            <input id="manha" name="periodo" type="radio"/>
-            <label for="manha">Manhã</label>
-            <input id="tarde" name="periodo" type="radio"/>
-            <label for="tarde">Tarde</label>
-            <input id="noite" name="periodo" type="radio"/>
-            <label for="noite">Noite</label>
-
-            <input id="novidades" name="novidades" type="checkbox"/>
-            <label for="novidades">Quero recebere novidades!!!</label>
-            <button type="submit">Buscar</button>
-
-            <br>
-            <br>
-            <label for="comida">Comida preferida</label>
-            <select name="comida" id="comida">
-                <option>Escolha uma comida</option>
-                <option>Grilho frito</option>
-                <option>Sapo frito</option>
-                <option>Paca frita</option>
-            </select>
-            
-            <br>
-            <label for="descricao">Como vc quer sua comida?</label>
-            <textarea id="descricao" name="deescricao" rows="4"></textarea>
-            <br>
-            <button type="reset">Limpar campos</button>
-        </form>
+                <h2>Qual poder você prefere</h2>
+                    <section>
+                        <article class="opcao">
+                            <input id="poder" name="poder" type="radio"/>
+                            <label for="poder">Voar</label>
+                        </article>
+                         <article class="opcao">
+                            <input id="poder" name="poder" type="radio"/>
+                            <label for="poder">supervelocidade</label>
+                        </article>
+                        <article class="opcao">
+                            <input id="poder" name="poder" type="radio"/>
+                            <label for="poder">superforça</label>
+                        </article>
+                        <article class="opcao">
+                            <input id="missao" name="missao" type="checkbox">
+                            <label for="missao">Quero receber novas missões.</label>
+                        </article>
+                        <article class="pergunta">
+                            <label for="porque">Por que você quer ser um herói?</label>
+                            <textarea id="porque" name="porque" rows="4"></textarea>
+                        </article>
+                    </section>
+                        <button type="submit">Enviar inscrição</button>
+            </form>
+        </main>
+        <footer>
+            <p>Prática de formulário HTML</p>
+        </footer>
     </body>
 </html>
